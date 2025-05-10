@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
 }
 
 .App-logo {
@@ -35,4 +39,69 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+h1 {
+  color: #333;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+.upload-container {
+  display: flex;
+  margin: 20px 0;
+  align-items: center;
+  gap: 10px;
+}
+
+.file-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.upload-button {
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.upload-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.error-message {
+  background-color: #fdd;
+  color: #c00;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+
+.loading {
+  color: #666;
+  margin: 20px 0;
+  font-style: italic;
+}
+
+.response-container {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+.classification-result {
+  white-space: pre-wrap;
+  font-family: 'Courier New', monospace;
+  background-color: white;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }
